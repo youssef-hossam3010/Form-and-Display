@@ -1,0 +1,21 @@
+<body>
+<div class="table-title">
+<h3>Data Table</h3>
+</div>
+<table class="rwd-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!--Directive ===> *ngFor  -->
+    <tr *ngFor="let s of students">
+      <td>{{s.name}}</td>
+      <td>{{s.age}}</td>
+      <!-- <td *ngIf="s.age<20">{{s.age}}</td> -->
+    </tr>
+  </tbody>
+</table>
+  
